@@ -1,28 +1,48 @@
 # Orange Marmalade Gravy Software
 
-Orange Marmalade Gravy Software is a group focused on building, maintaining, and sharing open source software.
+Security-minded open source for infrastructure, monitoring, and AI evaluation.
 
-We use this organization to publish projects, experiments, and tools that are useful to developers and the wider community. Our goal is to make practical software that people can inspect, use, adapt, and improve.
+Orange Marmalade Gravy Software builds practical software with clear documentation, testable behaviour, and explicit trust boundaries. Our projects are mostly systems and developer-facing tools, with a focus on secure defaults, operational visibility, and realistic failure testing.
 
-## What we do
+## Projects
 
-- Build open source libraries, applications, and developer tools.
-- Share project code, documentation, and examples publicly.
-- Collaborate through issues, discussions, and pull requests.
-- Encourage learning, experimentation, and reusable software.
+| Project                                                                                      | What it is                                                                                                                                                                                                           | Status                                        |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [Merovingian](https://github.com/OMG-Software/Merovingian)                                   | A modern C++ Matrix homeserver project focused on secure defaults, fail-closed validation, structured diagnostics, and narrow trust boundaries around client, federation, storage, media, and administration paths.  | Active development; not production-ready yet. |
+| [TheWatcher](https://github.com/OMG-Software/TheWatcher)                                     | A cross-platform server and endpoint monitoring platform with user-space agents, a server data plane, runtime configuration, metrics collection, and a web dashboard.                                                | Active development.                           |
+| [LLM Prompt Injection Testing](https://github.com/OMG-Software/LLM-prompt-injection-testing) | A benchmark and evaluation harness for testing how language models behave on realistic mixed-trust documentation, including prompt injection, retrieval mistakes, artifact laundering, and tool-escalation pressure. | Usable as an evaluation/research tool.        |
 
-## What we value
+## What we build for
 
-- Open collaboration.
-- Clear documentation.
-- Practical, maintainable code.
-- Respectful communication.
-- Responsible project stewardship.
+We are interested in software that is useful under real operational constraints:
+
+* infrastructure that can be inspected, tested, and deployed carefully;
+* monitoring tools that make systems easier to understand and operate;
+* security-focused engineering with explicit boundaries and defensive defaults;
+* evaluation tooling that catches realistic failure modes rather than toy examples;
+* documentation that explains how projects work, what is complete, and what is still unsafe or unfinished.
+
+## Engineering principles
+
+Across projects, we aim for:
+
+* clear project status and readiness notes;
+* reproducible build and test workflows;
+* maintainable code over clever shortcuts;
+* documented configuration and operational behaviour;
+* security review, static analysis, and automated checks where practical;
+* honest limitations instead of overclaiming maturity.
 
 ## Contributing
 
-Feedback, bug reports, feature ideas, and pull requests are welcome. Each project may have its own contribution guidelines, so check the repository README and open issues before starting work.
+Issues, bug reports, feature ideas, documentation improvements, and pull requests are welcome.
 
-## Explore our projects
+Before contributing, check the target repository’s README, open issues, documentation, license, and project status. Some projects are still experimental or under active development, so the safest starting point is usually a small issue, documentation fix, test case, or focused bug report.
 
-Browse the repositories in this organization to see what we are building. License terms, setup instructions, and contribution details are documented in each project repository.
+## Licenses
+
+Licensing is defined per repository. Check each project’s `LICENSE` file before using, redistributing, or contributing code.
+
+## Explore
+
+Browse the repositories to see current work, project documentation, setup instructions, and contribution details.
