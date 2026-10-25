@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description">
+  <title id="title">OMG Software — Open source. Clear boundaries.</title>
+  <desc id="description">Orange Marmalade Gravy Software. A small team. A shared commitment. Orange geometric trust boundaries on a charcoal background.</desc>
+  <defs>
+    <linearGradient id="orange" x1="820" y1="90" x2="1080" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff9d5c"/>
+      <stop offset="1" stop-color="#ef572c"/>
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#53534d"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="380" fill="#151616"/>
+  <g transform="translate(44 28)">
+    <path d="M32 11 20 4 6 12v16l14 8 14-8v-8H21" fill="none" stroke="#ff8954" stroke-width="4"/>
+    <text x="53" y="25" fill="#efeee8" font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="700">OMG<tspan fill="#b9bbb3" font-size="13" font-weight="400"> / SOFTWARE</tspan></text>
+  </g>
+  <path d="M48 85H1152M48 333H1152" stroke="#343632"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="167" fill="#efeee8" font-size="62" letter-spacing="-2">Open source.</text>
+    <text x="48" y="237" fill="#ff8954" font-size="62" letter-spacing="-2">Clear boundaries.</text>
+    <text x="50" y="290" fill="#efeee8" font-size="21">A small team. A shared commitment.</text>
+  </g>
+  <g fill="none">
+    <rect x="764" y="106" width="356" height="201" fill="url(#dots)"/>
+    <path d="M942 101 1093 154V254L942 307 791 254V154Z" stroke="#494944"/>
+    <path d="M942 121 1061 163V245L942 287 823 245V163Z" stroke="#ff8954" stroke-opacity="0.5" stroke-dasharray="4 7"/>
+    <path d="M942 145 1029 175V233L942 263 855 233V175Z" stroke="url(#orange)" stroke-width="2.5"/>
+    <path d="M942 101V145M1093 154 1029 175M1093 254 1029 233M942 307V263M791 254 855 233M791 154 855 175" stroke="#626059"/>
+    <path d="M942 163 1004 185V223L942 245 880 223V185Z" fill="url(#orange)"/>
+    <path d="M880 185 942 211 1004 185M942 211V245" stroke="#64331d"/>
+    <g fill="#151616" stroke="#b7b2a7">
+      <circle cx="942" cy="101" r="4"/>
+      <circle cx="1093" cy="154" r="4"/>
+      <circle cx="1093" cy="254" r="4"/>
+      <circle cx="942" cy="307" r="4"/>
+      <circle cx="791" cy="254" r="4"/>
+      <circle cx="791" cy="154" r="4"/>
+    </g>
+    <circle cx="942" cy="204" r="5" fill="#151616"/>
+  </g>
+  <rect x="48" y="353" width="5" height="5" fill="#ff8954"/>
+  <text x="64" y="359" fill="#a6a8a0" font-family="Consolas, 'Courier New', monospace" font-size="10" letter-spacing="1.4">BUILT TO BE UNDERSTOOD</text>
+  <text x="1152" y="359" text-anchor="end" fill="#a6a8a0" font-family="Consolas, 'Courier New', monospace" font-size="10" letter-spacing="1">EXPLICIT TRUST BOUNDARIES</text>
+</svg>

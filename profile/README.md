@@ -1,50 +1,65 @@
-# Orange Marmalade Gravy Software
+[![OMG Software — Open source. Clear boundaries.](assets/omg-software-banner.svg)](https://omg-software.org/)
 
-Security-minded open source for secure communications, infrastructure, monitoring, self-hosted community software, and AI evaluation.
+# OMG Software
 
-Orange Marmalade Gravy Software builds practical software with clear documentation, testable behaviour, and explicit trust boundaries. Our projects range from systems and developer-facing tools to self-hosted services and end-user clients, with a focus on secure defaults, operational visibility, and realistic failure testing.
+**A small team. A shared commitment.**
+
+We are Orange Marmalade Gravy Software: a couple of people building open-source software with security at the centre. We care about what our software does, who can inspect it, and where its limits are.
+
+[Meet OMG](https://omg-software.org/) · [Explore our projects](#projects) · [Get involved](#get-involved)
+
+## About us
+
+Software should be open to inspection. Security should be part of the work.
+
+We build tools for communications, infrastructure, community software, and AI evaluation. We ask difficult questions about trust, test how systems fail, and explain what is still unfinished. We want people to understand the software they choose to run.
 
 ## Projects
 
-| Project                                                                                      | What it is                                                                                                                                                                                                                                                                   | Status                                                                               |
-| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [Merovingian](https://github.com/OMG-Software/Merovingian)                                   | A Matrix homeserver in modern C++26 that applies OS-level containment and fail-closed engineering at every layer: sandboxed workers for federation and media handling, mechanically enforced memory-safety rules, encrypted signing keys, and redaction-aware audit logging. | Beta; suitable for evaluation and testing, not production-ready yet.                 |
-| [Persephone](https://github.com/OMG-Software/Persephone)                                     | A planned Rust desktop Matrix client for Windows, Linux, and macOS, built on Tauri and designed for high-risk users facing targeted attacks, metadata exposure, and hostile media. Merovingian is a primary integration target.                                              | Requirements and architecture planning; no runnable code yet.                        |
-| [TheWatcher](https://github.com/OMG-Software/TheWatcher)                                     | A cross-platform server and endpoint monitoring platform with user-space agents, a server data plane, runtime configuration, metrics collection, and a web dashboard.                                                                                                        | Active development.                                                                  |
-| [Atomiser](https://github.com/OMG-Software/Atomiser)                                         | An invite-only community video-hosting web application built with FastAPI and SQLite, with Argon2id, TOTP, and WebAuthn passkey authentication, role-based access, and durable ffmpeg transcoding behind nginx.                                                              | Working application with a documented production deployment; no tagged releases yet. |
-| [LLM Prompt Injection Testing](https://github.com/OMG-Software/LLM-prompt-injection-testing) | A benchmark and evaluation harness for testing how language models behave on realistic mixed-trust documentation, including prompt injection, retrieval mistakes, artifact laundering, and tool-escalation pressure.                                                         | Usable as an evaluation/research tool.                                               |
+### Merovingian · Matrix homeserver
 
-## What we build for
+**A homeserver with boundaries.**
 
-We are interested in software that is useful under real operational constraints:
+A Matrix homeserver in modern C++26. Built around process isolation, defensive configuration, and documented security boundaries.
 
-* infrastructure that can be inspected, tested, and deployed carefully;
-* monitoring tools that make systems easier to understand and operate;
-* security-focused engineering with explicit boundaries and defensive defaults;
-* evaluation tooling that catches realistic failure modes rather than toy examples;
-* documentation that explains how projects work, what is complete, and what is still unsafe or unfinished.
+**Beta.** For evaluation and testing. Not ready for production use.
 
-## Engineering principles
+[Repository](https://github.com/OMG-Software/Merovingian) · [Documentation](https://omg-software.github.io/Merovingian/)
 
-Across projects, we aim for:
+### Persephone · Matrix desktop client
 
-* clear project status and readiness notes;
-* reproducible build and test workflows;
-* maintainable code over clever shortcuts;
-* documented configuration and operational behaviour;
-* security review, static analysis, and automated checks where practical;
-* honest limitations instead of overclaiming maturity.
+**A considered approach to the client.**
 
-## Contributing
+A Rust and Tauri desktop Matrix client in early development. Designed with explicit trust boundaries, with Merovingian as a primary integration target. The current Windows prototype can sign in and show rooms and message history.
 
-Issues, bug reports, feature ideas, documentation improvements, and pull requests are welcome.
+**Early development.** Not ready for real use. Only Windows is currently built and tested. No milestone has passed its acceptance gates, and no production security controls exist yet.
 
-Before contributing, check the target repository’s README, open issues, documentation, license, and project status. Some projects are still experimental or under active development, so the safest starting point is usually a small issue, documentation fix, test case, or focused bug report.
+[Repository](https://github.com/OMG-Software/Persephone) · [Project site](https://omg-software.github.io/Persephone/)
 
-## Licenses
+### Our wider work
 
-Licensing is defined per repository. Check each project’s `LICENSE` file before using, redistributing, or contributing code.
+| Project | What we are building | Readiness |
+| --- | --- | --- |
+| [TheWatcher](https://github.com/OMG-Software/TheWatcher) | Server and endpoint monitoring with user-space agents, metrics collection, runtime configuration, and a web dashboard. | Active development. |
+| [Atomiser](https://github.com/OMG-Software/Atomiser) | Invite-only community video hosting with role-based access, passkeys, and queued transcoding. Built with Python and FastAPI. | Working application with setup and deployment documentation. Review current limitations before deploying. |
+| [LLM Prompt Injection Testing](https://github.com/OMG-Software/LLM-prompt-injection-testing) | A benchmark and evaluation harness for language models working with mixed-trust documentation. Tests include retrieval errors, artifact laundering, and tool escalation. | Evaluation and research tooling. Results apply to the tested scenarios. |
 
-## Explore
+Project summaries were checked against public READMEs on **25 October 2026**. Follow each repository for current status and limitations.
 
-Browse the repositories to see current work, project documentation, setup instructions, and contribution details.
+## Our approach
+
+- **Make boundaries explicit.** Define what is trusted, what is exposed, and what happens when something fails. Document the design decisions.
+- **Make behaviour testable.** Prefer reproducible builds, useful tests, and operational visibility. Test realistic failure modes alongside expected behaviour.
+- **Say what is unfinished.** State project status and known limits. A prototype, a beta, and a release are different things.
+
+## Get involved
+
+Good software is a shared effort. You do not need to write code to help.
+
+- **Explore.** Start with a project's README, readiness notes, and documentation.
+- **Question.** Examine an assumption or report a problem you can reproduce. Check the repository's security guidance before reporting a potential vulnerability.
+- **Contribute.** A focused test, a documentation fix, or a small code change is a good place to begin. Read the contribution guidance and open issues first.
+
+Licensing is defined per repository. Check the project's `LICENSE` file before using, redistributing, or contributing code.
+
+[Visit omg-software.org](https://omg-software.org/) · [Browse all repositories](https://github.com/orgs/OMG-Software/repositories)
